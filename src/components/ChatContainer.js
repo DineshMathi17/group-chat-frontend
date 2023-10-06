@@ -10,7 +10,7 @@ import { CommentOutlined } from '@ant-design/icons'
 
 export default function ChatContainer() {
   
-    let socketio  = socketIOClient("http://localhost:7000")
+    let socketio  = socketIOClient("https://group-chat-backend-4au0.onrender.com")
     const [chats , setChats] = useState([])
     const [user, setUser] = useState(localStorage.getItem("user"))
     const avatar = localStorage.getItem('avatar')
